@@ -5,8 +5,6 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -25,13 +23,7 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <a
-            href="/MohanKumar_React_TypeScript.pdf"
-            className="rounded-md bg-blue-600 px-3 py-1.5 text-white hover:bg-blue-700"
-            target="_blank"
-          >
-            Resume
-          </a>
+      
         </div>
       </div>
     </nav>
