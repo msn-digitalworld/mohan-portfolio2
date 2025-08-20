@@ -1,4 +1,3 @@
-// components/Contact.tsx
 "use client";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
@@ -34,47 +33,58 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 bg-white">
+    <section
+      id="contact"
+      className="py-16 bg-white dark:bg-gray-900 transition-colors duration-300"
+    >
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-6">Get In Touch</h2>
-        <p className="text-gray-600 text-center mb-12">
+        <h2 className="text-3xl font-bold text-center mb-6 text-gray-900 dark:text-white">
+          Get In Touch
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300 text-center mb-12">
           Interested in working together or have a question? Drop me a message!
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className="grid gap-6 bg-gray-50 p-8 rounded-2xl shadow-lg"
+          className="grid gap-6 bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
         >
           {/* Name */}
           <div>
-            <label className="block text-sm font-medium mb-2">Name</label>
+            <label className="block text-sm font-medium mb-2 text-gray-800 dark:text-gray-200">
+              Name
+            </label>
             <input
               type="text"
               name="name"
               required
-              className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
           {/* Email */}
           <div>
-            <label className="block text-sm font-medium mb-2">Email</label>
+            <label className="block text-sm font-medium mb-2 text-gray-800 dark:text-gray-200">
+              Email
+            </label>
             <input
               type="email"
               name="email"
               required
-              className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
 
           {/* Message */}
           <div>
-            <label className="block text-sm font-medium mb-2">Message</label>
+            <label className="block text-sm font-medium mb-2 text-gray-800 dark:text-gray-200">
+              Message
+            </label>
             <textarea
               name="message"
               rows={5}
               required
-              className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
             ></textarea>
           </div>
 
